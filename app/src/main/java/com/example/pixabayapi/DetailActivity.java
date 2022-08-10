@@ -1,8 +1,8 @@
-package com.example.tamilnewsapi;
+package com.example.pixabayapi;
 
-import static com.example.tamilnewsapi.MainActivity.EXTRA_CREATOR;
-import static com.example.tamilnewsapi.MainActivity.EXTRA_LIKES;
-import static com.example.tamilnewsapi.MainActivity.EXTRA_URL;
+import static com.example.pixabayapi.MainActivity.EXTRA_CREATOR;
+import static com.example.pixabayapi.MainActivity.EXTRA_LIKES;
+import static com.example.pixabayapi.MainActivity.EXTRA_URL;
 
 import androidx.appcompat.app.AppCompatActivity;
 

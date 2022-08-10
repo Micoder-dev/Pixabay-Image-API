@@ -1,4 +1,4 @@
-package com.example.tamilnewsapi;
+package com.example.pixabayapi;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
