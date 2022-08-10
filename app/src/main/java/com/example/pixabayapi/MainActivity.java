@@ -1,5 +1,7 @@
 package com.example.pixabayapi;
 
+import static com.example.pixabayapi.SearchActivity.SEARCH_KEY;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -49,7 +51,11 @@ public class MainActivity extends AppCompatActivity implements ExampleAdapter.On
     }
 
     private void parseJSON() {
-        String url = "https://pixabay.com/api/?key=28630842-5569991f535bc8d47a6f60731&q=dog&image_type=photo&pretty=true";
+
+        Intent intent = getIntent();
+        String searchKey = intent.getStringExtra(SEARCH_KEY);
+
+        String url = "https://pixabay.com/api/?key=28630842-5569991f535bc8d47a6f60731&q="+searchKey+"&image_type=photo&pretty=true";
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
